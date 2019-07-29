@@ -1,0 +1,9 @@
+image:
+  file: Dockerfile
+ports:
+- port: 6080
+- port: 8080
+tasks:
+- init: npm i
+- command: npm run start
+checkoutLocation: https://github.com/teebow/mds.git
